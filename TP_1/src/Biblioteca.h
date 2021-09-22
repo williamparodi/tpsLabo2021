@@ -92,7 +92,11 @@ int dividirEnteros(int numero1,int numero2,float *pResultado);
 
  void mostrarFactorial(int numero,int factorial,int funcionFactorialOk);
 
+ void mostrarSuma(int numero1, int numero2,int resultado);
 
+ void mostrarResta(int numero1, int numero2,int resultado);
+
+ void mostrarMultiplicacion(int numero1,int numero2,int resultado);
 
 
 #endif /* BIBLIOTECA_H_ */

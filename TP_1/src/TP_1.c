@@ -75,10 +75,10 @@ int main()
             case 4:
                 if(flagCalculos == 1)
                 {
-                    printf("a)El resultado de la suma de  %d + %d es: %d\n",operador1,operador2,resultadoSuma);
-                    printf("b)El resultado de la resta de %d - %d es : %d\n",operador1,operador2,resultadoResta);
+                    mostrarSuma(operador1,operador2,resultadoSuma);
+                    mostrarResta(operador1,operador2,resultadoResta);
                     mostrarResultadoDivision(operador1,operador2,funcionDivisionOk,resultadoDivision);
-                    printf("d)El resultado de la multiplicacion de %d * %d es : %d\n",operador1,operador2,resultadoMultiplicacion);
+                    mostrarMultiplicacion(operador1,operador2,resultadoMultiplicacion);
                     printf("e)");
                     mostrarFactorial(operador1,factorialA,funcionFactorialAOk);
                     printf("y ");

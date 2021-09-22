@@ -101,6 +101,20 @@ int factorial(int numero,int* pFactorial)
     return todoOk;
 }
 
+void mostrarSuma(int numero1, int numero2,int resultado)
+{
+	 printf("a)El resultado de la suma de  %d + %d es: %d\n",numero1,numero2,resultado);
+}
+
+void mostrarResta(int numero1, int numero2,int resultado)
+{
+	printf("b)El resultado de la resta de %d - %d es : %d\n",numero1,numero2,resultado);
+}
+
+void mostrarMultiplicacion(int numero1,int numero2,int resultado)
+{
+	 printf("d)El resultado de la multiplicacion de %d * %d es : %d\n",numero1,numero2,resultado);
+}
 
 void mostrarResultadoDivision(int numero1,int numero2,int funcionDivisionOk,float resultadoDivision)
 {
