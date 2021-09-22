@@ -1,0 +1,193 @@
+17:29:36 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+15:27:17 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'main':
+..\src\TP_1.c:20:6: warning: variable 'resultado' set but not used [-Wunused-but-set-variable]
+   20 |  int resultado;
+      |      ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+15:28:01 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+15:30:11 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:51:11 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'main':
+..\src\TP_1.c:20:10: error: expected '=', ',', ';', 'asm' or '__attribute__' before ':' token
+   20 |  int num2:
+      |          ^
+..\src\TP_1.c:20:10: error: expected expression before ':' token
+..\src\TP_1.c:27:14: error: 'num2' undeclared (first use in this function); did you mean 'num1'?
+   27 |  scanf("%d",&num2);
+      |              ^~~~
+      |              num1
+..\src\TP_1.c:27:14: note: each undeclared identifier is reported only once for each function it appears in
+..\src\TP_1.c:29:2: error: 'resultado' undeclared (first use in this function)
+   29 |  resultado = sumaEnteros(num1,num2);
+      |  ^~~~~~~~~
+15:51:34 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:59:51 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:04:42 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+16:07:23 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:07:32 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:09:34 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+16:11:37 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+16:22:35 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+22:15:23 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+15:00:52 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+15:04:25 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+15:20:12 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:20:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:20:42 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+22:27:00 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+..\src\Bibilioteca.c:117:6: error: conflicting types for 'mostrarFactorial'
+  117 | void mostrarFactorial(int numero,int factorial,int funcionFactorialOk)
+      |      ^~~~~~~~~~~~~~~~
+In file included from ..\src\Bibilioteca.c:3:
+..\src\biblioteca.h:106:6: note: previous declaration of 'mostrarFactorial' was here
+  106 | void mostrarFactorial(int numero1,int numero2,int factorialA,int factoraB,int funcionFactorialAOk,int funcionFactorialBok);
+      |      ^~~~~~~~~~~~~~~~
+22:29:00 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+22:30:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+22:32:51 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:32:59 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+22:54:37 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+22:56:53 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+22:58:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+23:03:06 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+23:04:35 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+17:24:45 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+17:26:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+17:27:10 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
