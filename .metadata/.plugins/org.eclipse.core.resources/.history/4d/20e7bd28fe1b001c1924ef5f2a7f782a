@@ -90,45 +90,12 @@ int dividirEnteros(int numero1,int numero2,float *pResultado);
   */
  void mostrarResultadoDivision(int numero1,int numero2,int funcionDivisionOk,float resultadoDivision);
 
- /** \brief Muestra el mensaje valido con el resultado del factorial o invalido en caso de error.
-  *
-  * \param numero int El valor del numero ingresado
-  * \param factorial int El valor factorial del numero
-  * \param funcionFactorialOk int el valor de la funcionFactorialOk
-  * \return void
-  *
-  */
  void mostrarFactorial(int numero,int factorial,int funcionFactorialOk);
 
- /** \brief Muestra un mensaje con el resultado de la suma
-  *
-  * \param numero1 int EL valor del primer numero ingresado
-  * \param numero2 int El valor del segundo numero ingresado.
-  * \param resultado int EL valor del resultado.
-  * \return void
-  *
-  */
  void mostrarSuma(int numero1, int numero2,int resultado);
 
- /** \brief Muestra un mensaje con el resultado de la resta
-  *
-  * \param numero1 int EL valor del primer numero ingresado
-  * \param numero2 int   El valor del segundo numero ingresado
-  * \param resultado int El valor del resultado.
-  * \return void
-  *
-  */
  void mostrarResta(int numero1, int numero2,int resultado);
 
-
- /** \brief Muestra un mensaje con el resultado de la multiplicacion
-  *
-  * \param numero1 int El valor del primer numero
-  * \param numero2 int El valor del segundo numero.
-  * \param resultado int El valor del resultado de la multiplicacion.
-  * \return void
-  *
-  */
  void mostrarMultiplicacion(int numero1,int numero2,int resultado);
 
 

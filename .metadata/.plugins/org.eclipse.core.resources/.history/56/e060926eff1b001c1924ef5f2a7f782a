@@ -64,8 +64,8 @@ int main()
                     funcionDivisionOk = dividirEnteros(operador1,operador2,&resultadoDivision);
                     funcionFactorialAOk = factorial(operador1,&factorialA);
                     funcionFactorialBOk = factorial(operador2,&factorialB);
-                    flagCalculos = 1;
 
+                    flagCalculos = 1;
                 }
                 else
                 {

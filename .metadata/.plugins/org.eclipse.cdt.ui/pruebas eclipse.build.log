@@ -1,0 +1,9 @@
+21:23:08 **** Incremental Build of configuration Debug for project pruebas eclipse ****
+Info: Internal Builder is used for build
+gcc -o "pruebas eclipse.exe" "src\\pruebas eclipse.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\pruebas eclipse.o: in function `main':
+D:\Descargas\Pruebas Eclipse\Debug/../src/pruebas eclipse.c:25: undefined reference to `multiplicarDosNUmeros'
+collect2.exe: error: ld returned 1 exit status
+
+21:23:08 Build Failed. 2 errors, 0 warnings. (took 211ms)
+

@@ -64,8 +64,8 @@ int main()
                     funcionDivisionOk = dividirEnteros(operador1,operador2,&resultadoDivision);
                     funcionFactorialAOk = factorial(operador1,&factorialA);
                     funcionFactorialBOk = factorial(operador2,&factorialB);
-                    flagCalculos = 1;
 
+                    flagCalculos = 1;
                 }
                 else
                 {
@@ -76,7 +76,7 @@ int main()
                 if(flagCalculos == 1)
                 {
                     mostrarSuma(operador1,operador2,resultadoSuma);
-                    mostrarResta(operador1,operador2,resultadoResta);
+                    motrarResta(operador1,operador2,resultadoResta);
                     mostrarResultadoDivision(operador1,operador2,funcionDivisionOk,resultadoDivision);
                     mostrarMultiplicacion(operador1,operador2,resultadoMultiplicacion);
                     printf("e)");

@@ -191,3 +191,116 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
 gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
 Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+18:22:42 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+..\src\Bibilioteca.c: In function 'mostrarResta':
+..\src\Bibilioteca.c:111:59: error: 'operador1' undeclared (first use in this function)
+  111 |  printf("b)El resultado de la resta de %d - %d es : %d\n",operador1,operador2,resultado);
+      |                                                           ^~~~~~~~~
+..\src\Bibilioteca.c:111:59: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Bibilioteca.c:111:69: error: 'operador2' undeclared (first use in this function)
+  111 |  printf("b)El resultado de la resta de %d - %d es : %d\n",operador1,operador2,resultado);
+      |                                                                     ^~~~~~~~~
+..\src\Bibilioteca.c: In function 'mostrarMultiplicacion':
+..\src\Bibilioteca.c:116:69: error: 'operador1' undeclared (first use in this function)
+  116 |   printf("d)El resultado de la multiplicacion de %d * %d es : %d\n",operador1,operador2,resultado);
+      |                                                                     ^~~~~~~~~
+..\src\Bibilioteca.c:116:79: error: 'operador2' undeclared (first use in this function)
+  116 |   printf("d)El resultado de la multiplicacion de %d * %d es : %d\n",operador1,operador2,resultado);
+      |                                                                               ^~~~~~~~~
+18:23:38 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+18:31:10 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+..\src\TP_1.c: In function 'main':
+..\src\TP_1.c:79:21: warning: implicit declaration of function 'motrarResta'; did you mean 'mostrarResta'? [-Wimplicit-function-declaration]
+   79 |                     motrarResta(operador1,operador2,resultadoResta);
+      |                     ^~~~~~~~~~~
+      |                     mostrarResta
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:31:31 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:31:49 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+20:38:16 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibilioteca.o" "..\\src\\Bibilioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:38:32 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+20:47:22 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -o TP_1.exe "src\\Bibilioteca.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_1
+21:21:01 **** Rebuild of configuration Debug for project pruebas eclipse ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebas eclipse.o" "..\\src\\pruebas eclipse.c" 
+gcc -o "pruebas eclipse.exe" "src\\pruebas eclipse.o" 
+Info: Nothing to build for pruebas eclipse
+21:22:21 **** Incremental Build of configuration Debug for project pruebas eclipse ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\pruebas eclipse.o" "..\\src\\pruebas eclipse.c" 
+..\src\pruebas eclipse.c: In function 'main':
+..\src\pruebas eclipse.c:25:30: warning: implicit declaration of function 'multiplicarDosNUmeros'; did you mean 'multiplicarDosNumeros'? [-Wimplicit-function-declaration]
+   25 |    resultadoMultiplicacion = multiplicarDosNUmeros(numeroUno,numeroDos);
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+      |                              multiplicarDosNumeros
+..\src\pruebas eclipse.c:23:9: warning: unused variable 'resultadoDivision' [-Wunused-variable]
+   23 |   float resultadoDivision;
+      |         ^~~~~~~~~~~~~~~~~
+..\src\pruebas eclipse.c:21:9: warning: unused variable 'resultadoResta' [-Wunused-variable]
+   21 |   float resultadoResta;
+      |         ^~~~~~~~~~~~~~
+..\src\pruebas eclipse.c:20:9: warning: unused variable 'resultadoSuma' [-Wunused-variable]
+   20 |   float resultadoSuma;
+      |         ^~~~~~~~~~~~~
+..\src\pruebas eclipse.c:25:30: warning: 'numeroDos' is used uninitialized in this function [-Wuninitialized]
+   25 |    resultadoMultiplicacion = multiplicarDosNUmeros(numeroUno,numeroDos);
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\pruebas eclipse.c:25:30: warning: 'numeroUno' is used uninitialized in this function [-Wuninitialized]
+gcc -o "pruebas eclipse.exe" "src\\pruebas eclipse.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\pruebas eclipse.o: in function `main':
+D:\Descargas\Pruebas Eclipse\Debug/../src/pruebas eclipse.c:25: undefined reference to `multiplicarDosNUmeros'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for TP_1
+21:23:08 **** Incremental Build of configuration Debug for project pruebas eclipse ****
+Info: Internal Builder is used for build
+gcc -o "pruebas eclipse.exe" "src\\pruebas eclipse.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\pruebas eclipse.o: in function `main':
+D:\Descargas\Pruebas Eclipse\Debug/../src/pruebas eclipse.c:25: undefined reference to `multiplicarDosNUmeros'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for TP_1
