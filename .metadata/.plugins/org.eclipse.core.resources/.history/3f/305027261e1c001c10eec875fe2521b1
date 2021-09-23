@@ -2,6 +2,8 @@
 #ifndef BIBLIOTECA_H_
 #define BIBLIOTECA_H_
 
+#include <stdio.h>
+#include <stdlib.h>
 
 /** \brief Despliega un menu de opciones.
  *
