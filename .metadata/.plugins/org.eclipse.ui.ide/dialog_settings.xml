@@ -10,4 +10,9 @@
 			<item value="C:\Users\Willy\Desktop\tpclone"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="d:\Descargas\Pruebas Eclipse"/>
+	</section>
 </section>
