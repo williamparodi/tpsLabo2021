@@ -87,7 +87,7 @@ int validarMinMax(int numero,int min, int max)
 {
 	int todoOk = 0;
 
-	if(numero >= min || numero <= max)
+	if(numero >= min && numero <= max)
 	{
 		todoOk = 1;
 	}
@@ -100,7 +100,7 @@ int validarFloatMinMax(float numero,int min,int max)
 {
 	int todoOk = 0;
 
-	if(numero >=min || numero <= max)
+	if(numero >=min && numero <= max)
 	{
 		todoOk = 1;
 	}

@@ -293,7 +293,7 @@ int sortEmployees(Employee* list,int len,int order)
     {
     	option = ingresarInt("Desea ordenar por Apellido o por Sector?: 1- Apellido o 2-Sector ");
 
-    	while(!validarMinMax(option,1,2))
+    	while(validarMinMax(option,1,2))
     	{
     	    option = ingresarInt("Error, 1- Ascendente o 2 Descendente\n");
     	}
@@ -345,12 +345,12 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 
 		while(!validarFloatMinMax(*salary,1,10000000))
 		{
-			*salary = ingresarFloat("Ingresar salario : ");
+			*salary = ingresarFloat("Error,Ingresar salario : ");
 		}
 
 		*sector = ingresarInt("Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
 
-		while(!validarMinMax(*sector,1,5))
+		while(!validarMinMax(*sector,1,5)== 0)
 		{
 			*sector = ingresarInt("Error, Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
 		}
