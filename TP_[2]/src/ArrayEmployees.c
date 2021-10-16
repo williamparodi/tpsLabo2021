@@ -78,7 +78,7 @@ int findEmployeeById(Employee* list,int id,int len)
 
 int removeEmployee(Employee* list,int id,int len)
 {
-    int itsOk = 0;
+    int itsOk = -1;
     int index;
     int option;
 
@@ -110,6 +110,7 @@ int removeEmployee(Employee* list,int id,int len)
             {
                 case 1:
                     list[index].isEmpty = 1;
+                    itsOk = 0;
                     break;
                 case 2:
                     printf("Baja cancelada\n");
@@ -122,7 +123,6 @@ int removeEmployee(Employee* list,int id,int len)
 
         }
 
-        itsOk = 1;
     }
 
     return itsOk;
@@ -293,7 +293,7 @@ int sortEmployees(Employee* list,int len,int order)
     {
     	option = ingresarInt("Desea ordenar por Apellido o por Sector?: 1- Apellido o 2-Sector ");
 
-    	while(validarMinMax(option,1,2))
+    	while(!validarMinMax(option,1,2))
     	{
     	    option = ingresarInt("Error, 1- Ascendente o 2 Descendente\n");
     	}
@@ -319,8 +319,8 @@ int sortEmployees(Employee* list,int len,int order)
 int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int *sector)
 {
 	int itsOk = 0;
-	char auxName[20];
-	char auxLastName[20];
+	char auxName[100];
+	char auxLastName[100];
 
 	if(name != NULL && lastName != NULL && pId != NULL && salary != NULL && sector != NULL)
 	{

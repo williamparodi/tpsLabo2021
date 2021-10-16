@@ -20,6 +20,7 @@
 
 int main()
 {
+
 	setbuf(stdout, NULL);
     char choice = 's';
     int nextId = 999;
@@ -84,7 +85,7 @@ int main()
                 }
                 else
                 {
-                   if(!removeEmployee(list,nextId,LEN))
+                   if(removeEmployee(list,nextId,LEN) == -1)
                     {
                         printf("Error, no se pudo dar de baja el id\n");
                     }
