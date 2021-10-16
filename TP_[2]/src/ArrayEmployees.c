@@ -217,11 +217,11 @@ int changeDataEmployee(Employee* list,int id,int len)
 
             do
             {
-            	 option = ingresarInt("Elija el campo a modificar: 1-Nombre 2-Apellido 3-Salario 4-Sector 5-Cancelar ");
+            	 option = ingresarInt("Elija el campo a modificar: 1-Nombre 2-Apellido 3-Salario 4-Sector 5-Salir ");
 
             	 while(!validarMinMax(option,1,5))
                  {
-            	     option = ingresarInt("Error, Elija el campo a modificar: 1-Nombre 2-Apellido 3-Salario 4-Sector 5-Cancelar ");
+            	     option = ingresarInt("Error, Elija el campo a modificar: 1-Nombre 2-Apellido 3-Salario 4-Sector 5-Salir ");
                  }
 
 				 switch(option)
@@ -235,6 +235,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 						}
 						pasarMayusculaPrimerCaracter(auxName);
 						strcpy(list[index].name,auxName);
+						itsOk = 1;
 						break;
 					case 2:
 						ingresarString("Modifique el apellido : ", auxLastName);
@@ -244,6 +245,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 						}
 						pasarMayusculaPrimerCaracter(auxLastName);
 						strcpy(list[index].lastName,auxLastName);
+						itsOk = 1;
 						break;
 					case 3:
 						auxSalary = ingresarFloat("Modifique el salario : ");
@@ -252,6 +254,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 							auxSalary = ingresarFloat("Error, Modifique el salario : ");
 						}
 						list[index].salary = auxSalary;
+						itsOk = 1;
 						break;
 					case 4:
 					   auxSector = ingresarInt("Modifique el sector : 1-Administracion 2-Contabilidad 3-Produccion 4-Publicidad 5-Venta ");
@@ -260,9 +263,9 @@ int changeDataEmployee(Employee* list,int id,int len)
 						   auxSector = ingresarInt("Error,Modifique el sector : 1-Administracion 2-Contabilidad 3-Produccion 4-Publicidad 5-Venta ");
 					   }
 					   list[index].sector = auxSector;
+					   itsOk = 1;
 					   break;
 					case 5:
-						printf("Modificacion cancelada\n");
 						choice = 'n';
 						break;
 					default:
@@ -276,7 +279,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 
         }
 
-        itsOk = 1;
+
     }
 
 

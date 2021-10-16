@@ -69,7 +69,7 @@ int main()
                 {
                     if(!changeDataEmployee(list,nextId,LEN))
                     {
-                        printf("Error,no se pudo cambiar los datos del empleado\n");
+                        printf("No se pudo cambiar los datos del empleado\n");
                     }
                     else
                     {
