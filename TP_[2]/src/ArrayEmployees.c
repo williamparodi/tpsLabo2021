@@ -193,8 +193,8 @@ int changeDataEmployee(Employee* list,int id,int len)
     int index;
     char choice = 's';
     int option;
-    char auxName[51];
-    char auxLastName[51];
+    char auxName[100];
+    char auxLastName[100];
     float auxSalary;
     int auxSector;
 
@@ -238,7 +238,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 						break;
 					case 2:
 						ingresarString("Modifique el apellido : ", auxLastName);
-						while(strlen(auxLastName) > 20)
+						while(strlen(auxLastName) > 15)
 						{
 							ingresarString("Error, Ingresar nombre : ", auxLastName);
 						}
@@ -350,7 +350,7 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 
 		*sector = ingresarInt("Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
 
-		while(!validarMinMax(*sector,1,5)== 0)
+		while(!validarMinMax(*sector,1,5))
 		{
 			*sector = ingresarInt("Error, Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
 		}
