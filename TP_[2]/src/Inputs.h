@@ -2,7 +2,7 @@
  * Inputs.h
  *
  *  Created on: 15 oct. 2021
- *      Author: Willy
+ *      Author: William Parodi
  */
 
 #ifndef INPUTS_H_
@@ -48,7 +48,14 @@ int ingresarString(char mensaje[], char info[]);
  *
  */
 int pasarMayusculaPrimerCaracter(char string[]);
-
+/**
+ * @fn int validarMinMax(int, int, int)
+ * @brief Valida un numero entero entre rango min y max
+ * @param numero int a valadidar
+ * @param min int minimo de rango
+ * @param max int maximo de rango
+ * @return Retorna un 1 si esta dentro del rango o 0 si esta fuera de rango
+ */
 int validarMinMax(int numero,int min, int max);
 
 #endif /* INPUTS_H_ */

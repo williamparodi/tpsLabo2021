@@ -2,7 +2,7 @@
  * ArrayEmployee.c
  *
  *  Created on: 15 oct. 2021
- *      Author: Willy
+ *      Author: WIlliam Parodi
  */
 
 #include <stdio.h>
@@ -169,7 +169,7 @@ void printEmployee(Employee x)
            x.sector);
 }
 
-int printListEmployee(Employee* list,int len)
+int printEmployees(Employee* list,int len)
 {
     int itsOk = 0;
 

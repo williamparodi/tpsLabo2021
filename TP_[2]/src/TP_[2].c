@@ -4,7 +4,7 @@
  Author      : William Parodi
  Version     :
  Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Description : Trabajo Practico 2
  ============================================================================
  */
 #include <stdio.h>
@@ -117,12 +117,12 @@ int main()
                             if(orderList == UP)
                             {
                                sortEmployees(list,LEN,UP);
-                               printListEmployee(list,LEN);
+                               printEmployees(list,LEN);
                             }
                            else
                             {
                                sortEmployees(list,LEN,DOWN);
-                               printListEmployee(list,LEN);
+                               printEmployees(list,LEN);
                             }
                             break;
                         case 2:

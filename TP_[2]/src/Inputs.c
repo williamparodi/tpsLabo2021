@@ -1,9 +1,4 @@
-/*
- * Inputs.c
- *
- *  Created on: 15 oct. 2021
- *      Author: Willy
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
