@@ -29,19 +29,13 @@ int main()
     int sector;
     int employeeCount = 0;
     float SalaryAccumulator = 0;
-    float averageSalary;
     int countAboveSalary = 0;
+    float averageSalary;
     int optionSalaryList;
     int orderList;
     Employee list[LEN];
 
-   /* sSector sectores[LEN_SECTOR] = {
-        {1,"Administracion"},
-        {2,"Contabilidad"},
-        {3,"Produccion"},
-        {4,"Publicidad"},
-        {5,"Venta"}};
-	*/
+
     if(initEmployees(list,LEN) == -1)
     {
         printf("Error\n");
@@ -130,10 +124,6 @@ int main()
                             calculateAverageSalary(SalaryAccumulator,employeeCount,&averageSalary);
                             calculateAboveAverageSalary(list,LEN,averageSalary,&countAboveSalary);
                             printSalaryAverageTotal(SalaryAccumulator,averageSalary,countAboveSalary);
-                            /*
-                            printf("\nSalario Total : %.2f\n",SalaryAccumulator);
-                            printf("Salario promedio : %.2f\n",averageSalary);
-                            printf("Cantidad de empleados por arriba del salario promedio : %d\n",countAboveSalary);*/
                             break;
                         default:
                             printf("Opcion invalida\n");

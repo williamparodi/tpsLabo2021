@@ -1,9 +1,4 @@
-/*
- * ArrayEmployee.c
- *
- *  Created on: 15 oct. 2021
- *      Author: WIlliam Parodi
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,13 +43,8 @@ int addEmployees(Employee* list, int len, int id, char name[],char lastName[],fl
         else
         {
             auxEmployee.id = id;
-
-            strncpy(auxEmployee.name,name,sizeof(auxEmployee.name));
-            pasarMayusculaPrimerCaracter(auxEmployee.name);
-
-            strncpy(auxEmployee.lastName,lastName,sizeof(auxEmployee.lastName));
-            pasarMayusculaPrimerCaracter(auxEmployee.lastName);
-
+            strcpy(auxEmployee.name,name);
+            strcpy(auxEmployee.lastName,lastName);
             auxEmployee.salary = salary;
             auxEmployee.sector = sector;
             auxEmployee.isEmpty = 0;
@@ -104,7 +94,7 @@ int removeEmployee(Employee* list,int id,int len)
         }
         else
         {
-            //system("cls");
+
             printf("-------------------------------\n");
             printf("    ***Borrar empleado***      \n");
             printf("-------------------------------\n");
@@ -203,8 +193,8 @@ int changeDataEmployee(Employee* list,int id,int len)
     int index;
     char choice = 's';
     int option;
-    char auxName[25];
-    char auxLastName[25];
+    char auxName[51];
+    char auxLastName[51];
     float auxSalary;
     int auxSector;
 
@@ -239,24 +229,28 @@ int changeDataEmployee(Employee* list,int id,int len)
 
 					case 1:
 						ingresarString("Modifique el nombre : ", auxName);
-						pasarMayusculaPrimerCaracter(auxName);
-						while(strlen(auxName) > 20)
+						while(strlen(auxName) > 15)
 						{
 							ingresarString("Error, Ingresar nombre : ", auxName);
 						}
+						pasarMayusculaPrimerCaracter(auxName);
 						strcpy(list[index].name,auxName);
 						break;
 					case 2:
 						ingresarString("Modifique el apellido : ", auxLastName);
-						pasarMayusculaPrimerCaracter(auxLastName);
 						while(strlen(auxLastName) > 20)
 						{
 							ingresarString("Error, Ingresar nombre : ", auxLastName);
 						}
+						pasarMayusculaPrimerCaracter(auxLastName);
 						strcpy(list[index].lastName,auxLastName);
 						break;
 					case 3:
 						auxSalary = ingresarFloat("Modifique el salario : ");
+						while(!validarFloatMinMax(auxSalary,1,10000000))
+						{
+							auxSalary = ingresarFloat("Error, Modifique el salario : ");
+						}
 						list[index].salary = auxSalary;
 						break;
 					case 4:
@@ -333,7 +327,6 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 		(*pId)++;
 
 		ingresarString("Ingresar nombre : ", auxName);
-		pasarMayusculaPrimerCaracter(auxName);
 
 		while(strlen(auxName) > 15)
 		{
@@ -341,7 +334,7 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 		}
 
 		ingresarString("Ingresar Apellido : ", auxLastName);
-		pasarMayusculaPrimerCaracter(auxLastName);
+
 
 		while(strlen(auxLastName) > 15)
 		{
@@ -349,7 +342,21 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 		}
 
 		*salary = ingresarFloat("Ingresar salario : ");
+
+		while(!validarFloatMinMax(*salary,1,10000000))
+		{
+			*salary = ingresarFloat("Ingresar salario : ");
+		}
+
 		*sector = ingresarInt("Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
+
+		while(!validarMinMax(*sector,1,5))
+		{
+			*sector = ingresarInt("Error, Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
+		}
+
+		pasarMayusculaPrimerCaracter(auxName);
+		pasarMayusculaPrimerCaracter(auxLastName);
 
 		strcpy(name,auxName);
 		strcpy(lastName,auxLastName);
