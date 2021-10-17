@@ -528,8 +528,9 @@ int sortEmployeesBySector(Employee* list,int len,int order)
 				{
 					auxLastName = strcmp(list[i].lastName,list[j].lastName);
 
-					if((list[i].sector > list[j].sector && order)|| (list[i].sector < list[j].sector && !order)
-						||(auxLastName == 1 && order) || (auxLastName == -1 && !order))
+					if((list[i].sector > list[j].sector && order) || (list[i].sector < list[j].sector && !order)
+						|| (auxLastName == 1  && list[i].sector == list[j].sector && order)
+						|| (auxLastName == -1  && list[i].sector == list[j].sector && !order))
 					{
 						auxEmployee = list[i];
 						list[i] = list[j];
