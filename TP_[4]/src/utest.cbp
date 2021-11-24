@@ -125,13 +125,25 @@
 		<Unit filename="LinkedList.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="d:/Descargas/TP4/src/Controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d:/Descargas/TP4/src/Controller.h" />
+		<Unit filename="d:/Descargas/TP4/src/Gamers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d:/Descargas/TP4/src/Gamers.h" />
+		<Unit filename="d:/Descargas/TP4/src/Inputs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d:/Descargas/TP4/src/Inputs.h" />
+		<Unit filename="d:/Descargas/TP4/src/Parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="d:/Descargas/TP4/src/Parser.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Extensions>
-			<code_completion />
-			<debugger />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

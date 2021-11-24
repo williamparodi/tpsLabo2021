@@ -474,7 +474,6 @@ LinkedList* ll_subList(LinkedList* this,int from,int to)
         if(cloneArray != NULL)
         {
 
-
             for(int i = from; i<to;i++)
             {
                 ll_add(cloneArray,ll_get(this,i));/// conseguimos el elemento en esos indices
@@ -518,9 +517,8 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order)
         {
             for(int j = i+1; j < len; j++)
             {
-              if(pFunc(ll_get(this,i),ll_get(this,j)) >0 && order ||
-                 (pFunc(ll_get(this,i),ll_get(this,j)) <0 && !order))
-              {
+              if( pFunc(ll_get(this, i),ll_get(this, j)) >0 && order
+                ||(pFunc(ll_get(this, i),ll_get(this, j)) <0 && !order)){
                  aux = ll_get(this,i);
                  ll_set(this,i,ll_get(this,j));
                  ll_set(this,j,aux);
