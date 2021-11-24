@@ -4874,7 +4874,7 @@
 
 1637630400 d:\descargas\tp4\src\inputs.h
 
-1637644850 source:d:\descargas\tp4\src\gamers.c
+1637782642 source:d:\descargas\tp4\src\gamers.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -4891,7 +4891,7 @@
 
 1637630202 d:\descargas\tp4\src\parser.h
 
-1637781605 source:d:\descargas\tp4\src\controller.c
+1637786313 source:d:\descargas\tp4\src\controller.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
