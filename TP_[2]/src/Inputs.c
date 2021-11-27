@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+#include "inputs.h"
 
 int menu()
 {
@@ -110,4 +110,101 @@ int validarFloatMinMax(float numero,int min,int max)
 }
 
 
+int validarString(char list[])
+{
+    int todoOk = 0;
+    if(list!= NULL)
+    {
+    	for (int i = 0; i < strlen(list); i++)
+    	{
+    		todoOk = -1;
+    		if(!(isalpha(list[i])) && list[i] != ' ')
+    		{
+    			todoOk = 1;
+    			break;
+    		}
+    	}
 
+  	}
+
+    return todoOk;
+}
+int getIntFloat (float* pResultado)
+    {
+        int retorno = -1;
+        char buffer[4096];
+
+
+        if (obtenerFloat(buffer, sizeof(buffer)) && esFlotante(buffer))
+        {
+            retorno = 0;
+            *pResultado = atof(buffer);
+        }
+        return retorno;
+    }
+
+
+
+
+    int obtenerFloat(char* cadena, int longitud)
+    {
+        char buffer[4096];
+        fflush(stdin);
+        scanf("%s", buffer);
+        strncpy(cadena, buffer,longitud);
+        return -1;
+    }
+
+
+
+    int validarFloat(float* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos)
+    {
+        int retorno = -1;
+        float buffer;
+
+        if(pResultado != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && reintentos >= 0)
+        {
+            do
+            {
+                printf("%s", mensaje);
+
+                if (getIntFloat(&buffer)== 0 && buffer >= minimo && buffer <= maximo)
+                {
+                    *pResultado = buffer;
+                    retorno = 0;
+                    break;
+                }
+                reintentos--;
+                printf("%s", mensajeError);
+            }
+            while (reintentos >= 0);
+        }
+
+        return retorno;
+    }
+
+
+    int esFlotante(char str[])
+    {
+        int i = 0;
+        int cantidad = 0;
+        while (str[i] != '\0')
+        {
+            if (i == 0 && str[i] == '-')
+            {
+                i++;
+                continue;
+            }
+            if (str[i] == '.' && cantidad== 0)
+            {
+                cantidad++;
+                i++;
+                continue;
+
+            }
+            if (str[i] < '0' || str[i] > '9')
+                return 0;
+            i++;
+        }
+        return 1;
+    }

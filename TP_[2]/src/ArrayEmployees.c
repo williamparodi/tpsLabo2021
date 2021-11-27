@@ -229,7 +229,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 
 					case 1:
 						ingresarString("Modifique el nombre : ", auxName);
-						while(strlen(auxName) > 15)
+						while(strlen(auxName) > 15 || validarString(auxName) == 1)
 						{
 							ingresarString("Error, Ingresar nombre : ", auxName);
 						}
@@ -239,7 +239,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 						break;
 					case 2:
 						ingresarString("Modifique el apellido : ", auxLastName);
-						while(strlen(auxLastName) > 15)
+						while(strlen(auxLastName) > 15 || validarString(auxLastName) == 1)
 						{
 							ingresarString("Error, Ingresar nombre : ", auxLastName);
 						}
@@ -248,11 +248,7 @@ int changeDataEmployee(Employee* list,int id,int len)
 						itsOk = 1;
 						break;
 					case 3:
-						auxSalary = ingresarFloat("Modifique el salario : ");
-						while(!validarFloatMinMax(auxSalary,1,10000000))
-						{
-							auxSalary = ingresarFloat("Error, Modifique el salario : ");
-						}
+						validarFloat(&auxSalary, "Modifique el salario : ","Error Salario : ", 1 , 10000000, 6);
 						list[index].salary = auxSalary;
 						itsOk = 1;
 						break;
@@ -331,7 +327,8 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 
 		ingresarString("Ingresar nombre : ", auxName);
 
-		while(strlen(auxName) > 15)
+
+		while(strlen(auxName) > 15 || validarString(auxName) == 1)
 		{
 			ingresarString("Error, Ingresar nombre : ", auxName);
 		}
@@ -339,17 +336,12 @@ int chargeDataEmployees(int *pId, char name[],char lastName[],float *salary,int 
 		ingresarString("Ingresar Apellido : ", auxLastName);
 
 
-		while(strlen(auxLastName) > 15)
+		while(strlen(auxLastName) > 15 || validarString(auxLastName) == 1)
 		{
 			ingresarString("Error, Ingresar apellido: ", auxLastName);
 		}
 
-		*salary = ingresarFloat("Ingresar salario : ");
-
-		while(!validarFloatMinMax(*salary,1,10000000))
-		{
-			*salary = ingresarFloat("Error,Ingresar salario : ");
-		}
+		validarFloat(salary, "Ingrese salario : ","Error Salario : ", 1 , 10000000, 6);
 
 		*sector = ingresarInt("Ingresar el sector : 1-Administracion 2-Contabilidad 3-Venta 4-Publicidad 5-Produccion ");
 

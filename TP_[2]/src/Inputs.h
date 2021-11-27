@@ -61,5 +61,9 @@ int validarMinMax(int numero,int min, int max);
  * @return Retorna un 1 si esta dentro del rango o 0 si esta fuera de rango
  */
 int validarFloatMinMax(float numero,int min,int max);
-
+int validarString(char list[]);
+int getIntFloat (float* pResultado);
+int obtenerFloat(char* cadena, int longitud);
+int validarFloat(float* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
+int esFlotante(char str[]);
 #endif /* INPUTS_H_ */
